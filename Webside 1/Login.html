@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SinUp</title>
+</head>
+<style>
+    *{
+        font-family:sans-serif;
+    }
+  body{
+    display:flex;
+   box-shadow:4px 4px 5px rgba(227, 38, 38, 0.6);
+    align-items:center;
+    justify-content:center;
+    width: 100%;
+    height:100vh;
+    background-color:#f2f2rf2;
+  }
+  main{
+    width:400px;
+    border-top-left-radius:50px;
+    background-color:black;
+    border-radius:50px;
+    color:white;
+  }
+  div h1{
+    color:white;
+    text-align:center;
+  }
+  div input{
+    width:80%;
+    margin:auto;
+    padding:7px 15px;
+    display:block;
+    
+  }
+  div label{
+    padding-left:20px;
+    margin:10px;
+    font-size:17px;
+    margin-bottom:10px;
+  }
+ .btn{
+    padding:10px 30px;
+    border:0;
+    outline:0;
+    border-radius:5px;
+    background-color:goldenrod;
+    margin-left:150px;
+    margin-top:10px;
+    cursor: pointer;
+
+}
+div p{
+    text-align:center;
+}
+@media only screen and (max-width:700px) {
+    .btn{
+        margin-left:90px;
+        margin-top:10px;
+    }
+}
+  
+ 
+
+</style>
+<body>
+    <main>
+        <div>
+            <h1>SinUp</h1>
+            <form action="">
+        
+                <label>Email Id:</label>
+                <input type="email" name="email"  id="pasw"placeholder="Enter your email.." required>
+                <label>Password:</label>
+                <input type="password" name="password"  id="pasw" placeholder="Enter your password" required>
+                <button class="btn">Login</button>
+                    <p><a href="#">SinUp</a>.</p>
+                    
+               
+            
+            </form>
+        </div>
+    </main>
+</body>
+</html>
