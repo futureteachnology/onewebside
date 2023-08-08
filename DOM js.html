@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+<style>
+    div{
+        margin:auto;
+        width:200px;
+        padding:20px;
+        text-align:center;
+        box-shadow:0px 0px 10px #ccc;
+        border-bottom-left-radius:50px;
+        border-bottom-right-radius:50px ;
+
+    }
+    input{
+        width:100%;
+        padding:px;
+        outline:0;
+        border:0;
+        border-bottom:1px solid red;
+        margin-bottom:20px;
+        border-radius:5px;
+        
+    }
+    select{
+        padding:5px 20px;
+        margin-bottom:20px;
+        background-color:greenyellow;
+        outline:0;
+        border:0;
+        box-shadow:0px 0px 10px red;
+        border-radius:50px;
+    }
+    select:hover{
+        color:red;
+
+    }
+    button{
+        width:100%;
+        background-color:black;
+        color:white;
+        border-radius:5rem;   
+        cursor: pointer; 
+    }
+    #output{
+        list-style:none;
+        color:blue;
+        background-color:red;
+        padding:8px 10px;
+        color:white;
+        margin-top:20px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        border-radius:5px;
+    }
+    h2{
+        -webkit-text-stroke-color:0px 10px 10px red;
+        background:transparent;
+    }
+    .logo img{
+        border-bottom-left-radius:20px;
+        border-bottom-right-radius:10px;
+    }
+    .video{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        max-width:1200px;
+        flex-wrap:wrap;
+    }
+    .video-box{
+        flex-basis:300px;
+        width:100px;
+        height:100px;
+    }
+
+    
+    
+</style>
+<body>
+ <div>
+    <p class="logo">
+        <img src="Images/logo.png" alt="" width="70px">
+    </p>
+    <h2>Calculater</h2>
+    <input type="number" class="number" placeholder="First Number" id="first">
+    <select id="menu">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="%">%</option>
+    </select>
+    <input type="number" class="number" placeholder="Second Number" id="second">
+    <button onclick="myfuncation()">Calculater</button>
+    <li id="output" >Output</li>
+    <script>
+        function myfuncation(){
+        var x =document.getElementById('first').value;
+        var y =document.getElementById('second').value;
+        var ope =document.getElementById('menu').value;
+        if (ope=="+"){
+            var res = parseInt(x)+parseInt(y);
+           
+        }
+        if (ope=="-"){
+            var res = parseInt(x)-parseInt(y);
+           
+        }
+        if (ope=="*"){
+            var res = parseInt(x)*parseInt(y);
+           
+        }
+        if (ope=="/"){
+            var res = parseInt(x)/parseInt(y);
+           
+        }
+        if (ope=="%"){
+            var res = parseInt(x)%parseInt(y);
+
+        }
+        document.getElementById('output').innerHTML =res;
+
+    
+       
+    }
+    </script>
+ </div>
+ <img src="Images/Deepak-kumar.jpg" alt="" width="200px" style="margin:auto; display:flex;">
+ <br>
+ <br>
+
+</body>
+<div class="video">
+    <div class="video-box">
+        <video src=""></video>
+        <div class="title">
+            <p></p>
+        </div>
+    </div>
+ </div>
+</html>
